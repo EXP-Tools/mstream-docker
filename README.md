@@ -42,7 +42,7 @@ mstream-docker
 ### 1. 项目构建
 
 - 宿主机安装 docker、docker-compose
-- 宿主机安全组/防火墙（iptables/firewall）放行这些端口的入口流量： 80、8080、8081、8083
+- 宿主机安全组/防火墙（iptables/firewall）放行 9000 端口的入口流量
 - 下载仓库： `git clone https://github.com/lyy289065406/mstream-docker /usr/local/mstream-docker`
 - 打开仓库目录： `cd /usr/local/mstream-docker`
 - 构建镜像并运行： `./run.sh -u admin -p admin123`
