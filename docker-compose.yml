@@ -1,0 +1,41 @@
+# How to use :
+# username=admin password=password uid=1000 gid=1000 docker-compose up -d
+# docker-compose down
+# --------------------------------------------------------------------------------
+
+version: '2'
+services:
+  mstream:
+    # https://hub.docker.com/r/linuxserver/mstream
+    image: ghcr.io/linuxserver/mstream
+    hostname: MSTREAM
+    container_name: docker_mstream
+    environment:
+      - PUID=${uid}
+      - PGID=${gid}
+      - TZ=Aisa/Shanghai
+      - USER=${username}
+      - PASSWORD=${password}
+      # 不能启用 Json，否则无法通过环境变量变更登录账密
+      - USE_JSON=false
+      - UMASK_SET=022
+    volumes:
+      - ./config/:/config/
+      - ./music/:/music/
+    ports:
+      - 9000:3000
+    networks: 
+      vpn:
+        ipv4_address: 172.168.28.2
+    restart: on-failure
+
+
+networks:
+  vpn:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet:  172.168.28.0/24
+          gateway: 172.168.28.1
+    
