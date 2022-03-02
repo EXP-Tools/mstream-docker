@@ -7,7 +7,7 @@ version: '2'
 services:
   mstream:
     # https://hub.docker.com/r/linuxserver/mstream
-    image: ghcr.io/linuxserver/mstream
+    image: linuxserver/mstream:version-v4.7.0
     hostname: MSTREAM
     container_name: docker_mstream
     environment:
