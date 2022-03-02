@@ -57,5 +57,5 @@ mstream-docker
 
 > 因版权关系越来越多音乐难以下载，可以到以下资源站搜索并免费下载音乐，下载后可把音乐文件存储到另一个 Repo（如 [music-library](https://github.com/lyy289065406/music-library)），使用时再通过 git clone 拉取到 [`music`](music) 目录
 
-- YouTube 视频/音乐下载： [سمعها](https://www.3esh-online.com/)
+- YouTube 视频/音乐下载： [链路一](https://www.3esh-online.com/) [链路二](https://sm.esm3ha.com/)
 - BiliBili 视频/音乐下载： [贝贝BiliBili](https://xbeibeix.com/api/bilibili)
