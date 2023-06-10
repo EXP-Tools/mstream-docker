@@ -55,7 +55,7 @@ mstream-docker
 
 直接把音乐文件放到宿主机的 [`music`](music) 目录，即可在前端的【File Explorer】找到这些音乐文件。
 
-> 因版权关系越来越多音乐难以下载，可以到以下资源站搜索并免费下载音乐，下载后可把音乐文件存储到另一个 Repo（如 [music-library](https://github.com/lyy289065406/music-library)），使用时再通过 git clone 拉取到 [`music`](music) 目录
+> 因版权关系越来越多音乐难以下载，可以到以下资源站搜索并免费下载音乐，下载后可把音乐文件存储到另一个 Repo，使用时再通过 git clone 拉取到 [`music`](music) 目录
 
 - YouTube 视频/音乐下载： سمعها [链路一](https://www.3esh-online.com/) [链路二](https://sm.esm3ha.com/) [链路三](https://sm3ha.ws//)
 - BiliBili 视频/音乐下载： [贝贝BiliBili](https://xbeibeix.com/api/bilibili)
